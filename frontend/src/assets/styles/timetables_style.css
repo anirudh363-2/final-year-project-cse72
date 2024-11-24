@@ -1,0 +1,157 @@
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.back-arrow {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+
+/* Sidebar list styling */
+.sidebar ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+.sidebar li {
+    padding: 10px 0;
+    font-size: 18px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Sidebar link styling */
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+/* Separator line */
+.sidebar li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #555;
+}
+
+/* Hover effect for text */
+.sidebar a:hover {
+    background: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(90deg, lightblue 50%, lightgreen 50%);
+}
+
+.sidebar li span {
+    margin-right: 10px;
+}
+
+/* Main content styling */
+.content {
+    margin-left: 220px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 30px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px 40px 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    font-size: 16px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+/* Timetables table styling */
+.timetables-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.timetables-table th,
+.timetables-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.timetables-table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.timetables-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Add button styling */
+.add-button {
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-button:hover {
+    background-color: #45a049;
+}
