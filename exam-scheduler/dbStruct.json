@@ -1,0 +1,114 @@
+{
+    "courses": {
+        "_id": "string",
+        "name": "string"
+    },
+    "students": {
+        "_id": "string",
+        "name": "string",
+        "rollNumber": "string",
+        "courses": [
+            "string1", 
+            "string2"
+        ]
+    },
+    "rooms": {
+        "_id": "string",
+        "name": "string"
+    },
+    "faculty": {
+        "_id": "string",
+        "name": "string",
+        "availability": [
+            "string1",
+            "string2"
+        ]  
+    },
+    "otherDetails": {
+        "_id": "string",
+        "timeSlots": [
+            "string1",
+            "string2",
+            "string3"
+        ],
+        "roomCapacity": "number"
+    },
+    "timetables": {
+        "_id": "string",
+        "name": "string",
+        "methods": {
+            "ConstraintSatisfactionProblem": {
+                "exams": [
+                    {
+                        "course": "string",
+                        "date": "string",
+                        "time": "string",
+                        "faculty": "string"
+                    }
+                ],
+                "students": [
+                    {
+                        "student": "string",
+                        "room": "string",
+                        "time": "string",
+                        "date": "string"
+                    }
+                ]
+            },
+            "GeneticAlgorithm": {
+                "exams": [
+                    {
+                        "course": "string",
+                        "date": "string",
+                        "time": "string",
+                        "faculty": "string"
+                    }
+                ],
+                "students": [
+                    {
+                        "student": "string",
+                        "room": "string",
+                        "time": "string",
+                        "date": "string"
+                    }
+                ]
+            },
+            "SimulatedAnnealing": {
+                "exams": [
+                    {
+                        "course": "string",
+                        "date": "string",
+                        "time": "string",
+                        "faculty": "string"
+                    }
+                ],
+                "students": [
+                    {
+                        "student": "string",
+                        "room": "string",
+                        "time": "string",
+                        "date": "string"
+                    }
+                ]
+            },
+            "OpenAI": {
+                "exams": [
+                    {
+                        "course": "string",
+                        "date": "string",
+                        "time": "string",
+                        "faculty": "string"
+                    }
+                ],
+                "students": [
+                    {
+                        "student": "string",
+                        "room": "string",
+                        "time": "string",
+                        "date": "string"
+                    }
+                ]
+            }
+        }
+    }
+}

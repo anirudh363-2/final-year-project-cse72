@@ -1,0 +1,43 @@
+@startuml FRONTEND_PAGES
+
+left to right direction
+
+actor User
+
+rectangle "Exam Scheduler Frontend" {
+  usecase "Home" as Home
+  usecase "Data" as Data
+  usecase "Generate" as Generate
+  usecase "Courses" as Courses
+  usecase "Rooms" as Rooms
+  usecase "Faculty" as Faculty
+  usecase "Other Details" as OtherDetails
+  usecase "Students" as Students
+  usecase "Timetables" as Timetables
+  usecase "Methods" as Methods
+  usecase "Schedule1" as Schedule1
+  usecase "Schedule2" as Schedule2
+  usecase "Schedule3" as Schedule3
+  usecase "Schedule4" as Schedule4
+
+
+  User --> Home
+  
+}
+
+Home --> Data
+Home --> Generate
+Data --> Courses
+Data --> Rooms
+Data --> Faculty
+Data --> OtherDetails
+Data --> Students
+Data --> Timetables
+Timetables --> Methods
+Methods --> Schedule1
+Methods --> Schedule2
+Methods --> Schedule3
+Methods --> Schedule4
+
+
+@enduml
